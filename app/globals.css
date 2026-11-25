@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Font Imports */
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700;900&family=Source+Serif+Pro:wght@400;600;700;900&display=swap');
+
+  body {
+    @apply bg-oat text-warm-black antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .grid-12 {
+    @apply grid grid-cols-12 gap-6;
+  }
+  
+  .editorial-heading {
+    @apply font-playfair font-bold tracking-tight;
+  }
+  
+  .section-padding {
+    @apply px-6 md:px-12 lg:px-16 xl:px-20;
+  }
+  
+  .max-content {
+    @apply max-w-content mx-auto;
+  }
+}
